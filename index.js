@@ -142,7 +142,7 @@ function removeNum() {
     numbers.splice(3,1)
 }
 // Q: What is the time complexity of the function?
-// ANSWER: O(n)
+// ANSWER:  "O(n) is a worst case scenerio, meaning all the other nums in the array will need to adjust index when you remove"
 
 
 // 10) -------------------------------------------------------
@@ -150,7 +150,7 @@ function insertNum() {
     numbers.splice(3, 0, 19)
 }
 // Q: What is the time complexity of the function?
-// ANSWER:
+// ANSWER: O(n) we're inserting "19" at index 3 and removing nothing, all other indicies after will also have to change and are operations themselves
 
 
 // 11) -------------------------------------------------------
@@ -200,7 +200,7 @@ function arrInception(parentArr) {
 // 14) You are challenged to find the squared value of each number in an array. This is not the best solution, but it is what you come up with anyway...
 
 function getNumbersSquared(numbers) {
-  let numbers2 = [...numbers]
+  let numbers2 = [...numbers] //already doubled the space by doubling the array
 
   let answers = []
 
@@ -212,7 +212,7 @@ function getNumbersSquared(numbers) {
 }
 
 // Q: What is the space complexity of this function?
-// ANSWER:
+// ANSWER: O(n)
 
 
 // Q: Is it possible to improve this function's space complexity? If it is, write a new function below.
@@ -281,13 +281,13 @@ function countLettersRoundTwo(str) {
 
 
 // Q: Do these functions have the same space complexity?
-// ANSWER:
+// ANSWER: yes
 
 
 // Q: What is the space complexity of each? 
-// ANSWER - countLetters:
-// ANSWER - countLettersRoundTwo:
+// ANSWER - countLetters: O(n)
+// ANSWER - countLettersRoundTwo: O(n)
 
 
 // Q: Explain how you came to your conclusions about the space complexity of each function. 
-// ANSWER: 
+// ANSWER: Each function is dependent on the size of the string
